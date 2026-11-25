@@ -339,7 +339,7 @@ export function App() {
               style={{
                 fontFamily: 'var(--font-display)',
                 fontWeight: 800,
-                fontSize: 'clamp(2.6rem, 8.5vw, 7.6rem)',
+                fontSize: 'clamp(2.1rem, 8.5vw, 7.6rem)',
                 lineHeight: 0.9,
                 letterSpacing: '-0.04em',
                 margin: '0 0 2.5rem',
