@@ -91,7 +91,7 @@ export const PROJECTS: ProjectItem[] = [
     stack: ['Go 1.24', 'SvelteKit 2', 'PostgreSQL 17', 'OIDC / OAuth2', 'Docker'],
     accent: '#CCFF00',
     githubUrl: 'https://github.com/fvrvz/authforest',
-    liveUrl: 'https://fvrvz.github.io/authforest/',
+    liveUrl: 'https://authforest.byfaraaz.com/',
   },
   {
     id: 'billease',
@@ -109,6 +109,7 @@ export const PROJECTS: ProjectItem[] = [
     stack: ['Scala 3.5', 'SolidJS', 'Tapir + Http4s', 'Cats Effect', 'Tailwind'],
     accent: '#FF3B1D',
     githubUrl: 'https://github.com/fvrvz/billease',
+    liveUrl: 'https://billease.byfaraaz.com/',
   },
   {
     id: 'managease',
@@ -126,6 +127,7 @@ export const PROJECTS: ProjectItem[] = [
     stack: ['SolidJS', 'Ruby on Rails 8', 'PostgreSQL 16', 'TypeScript', 'Docker'],
     accent: '#CCFF00',
     githubUrl: 'https://github.com/fvrvz/managease',
+    liveUrl: 'https://managease.byfaraaz.com/',
   },
   {
     id: 'notease',
@@ -143,6 +145,7 @@ export const PROJECTS: ProjectItem[] = [
     stack: ['Flutter', 'Dart', 'Multi-Cloud Sync', 'Glassmorphism'],
     accent: '#FF3B1D',
     githubUrl: 'https://github.com/fvrvz/notease',
+    liveUrl: 'https://notease.byfaraaz.com/',
   },
   {
     id: 'nostyle',
@@ -160,7 +163,7 @@ export const PROJECTS: ProjectItem[] = [
     stack: ['CSS3', 'Vue 3', 'Design Tokens', 'Open Source'],
     accent: '#CCFF00',
     githubUrl: 'https://github.com/fvrvz/nostyle-css',
-    liveUrl: 'https://fvrvz.github.io/nostyle-css/',
+    liveUrl: 'https://nostylecss.byfaraaz.com/',
   },
   {
     id: 'edai',

@@ -405,11 +405,12 @@ body {
 .hero-display-title {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: clamp(3.3rem, 11vw, 10.4rem);
+  font-size: clamp(2.35rem, 10.4vw, 10.4rem);
   line-height: 0.88;
   letter-spacing: -0.045em;
   margin: 2rem 0 1.5rem;
   text-transform: uppercase;
+  overflow-wrap: break-word;
 }
 
 .hero-line-mask {
@@ -869,4 +870,68 @@ html.theme-ink .work-card {
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.05em;
+}
+
+/* Responsive adjustments across mobile & tablet */
+@media (max-width: 768px) {
+  .top-bar {
+    padding: 0.6rem 0.9rem;
+  }
+
+  .brand-pill {
+    font-size: 0.82rem;
+  }
+
+  .work-card {
+    width: clamp(275px, 84vw, 440px);
+    min-height: 410px;
+  }
+
+  .works-track {
+    gap: 1.2rem;
+  }
+
+  .sticker-board {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 0.75rem;
+    min-height: 360px;
+    padding: 1.15rem 1.15rem 3rem;
+  }
+
+  .sticker-chip {
+    position: relative;
+    left: auto !important;
+    top: auto !important;
+    padding: 0.65rem 1rem;
+  }
+
+  .copy-toast {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .stats-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-cell {
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+    padding: 1rem 1.1rem;
+  }
+
+  .stat-cell:last-child {
+    border-bottom: none;
+  }
+
+  .magnetic-btn {
+    padding: 0.75rem 1.15rem;
+    font-size: 0.75rem;
+  }
 }

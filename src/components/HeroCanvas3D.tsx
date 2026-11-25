@@ -129,7 +129,13 @@ export function HeroCanvas3D({ isDark }: HeroCanvas3DProps) {
 
     // Planetary System Group
     const systemGroup = new THREE.Group();
-    systemGroup.position.set(window.innerWidth < 860 ? 0 : 1.55, 0.1, 0);
+    const applyResponsivePlanet = () => {
+      const isMobile = window.innerWidth < 860;
+      systemGroup.position.x = isMobile ? 0 : 1.55;
+      systemGroup.scale.setScalar(isMobile ? 0.68 : 1);
+    };
+    applyResponsivePlanet();
+    systemGroup.position.y = 0.1;
     systemGroup.rotation.z = -0.34; // Classic Saturn axial tilt
     systemGroup.rotation.x = 0.24;
     scene.add(systemGroup);
@@ -210,7 +216,7 @@ export function HeroCanvas3D({ isDark }: HeroCanvas3DProps) {
       camera.aspect = container.clientWidth / container.clientHeight;
       camera.updateProjectionMatrix();
       renderer.setSize(container.clientWidth, container.clientHeight);
-      systemGroup.position.x = window.innerWidth < 860 ? 0 : 1.55;
+      applyResponsivePlanet();
     };
     window.addEventListener('resize', onResize);
 
